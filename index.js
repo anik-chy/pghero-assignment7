@@ -45,11 +45,10 @@ startQuiz.addEventListener("click", () => {
 
 // All quiz data fetched from json
 const loadQuiz = async () => {
-    const res = await fetch("./data/quiz.json");
-    const data = await res.json();
-    quizData = data;
-    displayQuiz(quizData);
- 
+  const res = await fetch("./data/quiz.json");
+  const data = await res.json();
+  quizData = data;
+  displayQuiz(quizData);
 };
 
 // Displaying quiz on quiz page
@@ -73,8 +72,6 @@ const displayQuiz = (data) => {
 </div>`;
   });
 };
-
-
 
 // EventListener for quiz submit button
 document.querySelector("#submit").addEventListener("click", () => {
@@ -111,7 +108,8 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
+  console.log(storage);
   if (storage) {
     localStorage.setItem(
       "results",
