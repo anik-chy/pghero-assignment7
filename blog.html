@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <a class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white" href="index.html">Home</a>
+      </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+
+    <!-- question 1 -->
+    <h3>Question 1</h3>
+    <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Map
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Filter
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        ForEach
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Find
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <td class="px-6 py-4">
+                        Traverse all the elements an returns an array based on condition
+                    </td>
+                    <td class="px-6 py-4">
+                        Returns all matching value
+                    </td>
+                    <td class="px-6 py-4">
+                        Traverse all the elements but doesn’t return anything
+                    </td>
+                    <td class="px-6 py-4">
+                        Returns first matching value
+                    </td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+
+      <!-- question 2 -->
+      <h3>Question 2</h3>
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Local Storage
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Session Storage
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Cookies
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <td class="px-6 py-4">
+                        Persistent storage. Data will still remain after closing the browser
+                    </td>
+                    <td class="px-6 py-4">
+                        Volatile storage. Data will delete after closing the tab.
+                    </td>
+                    <td class="px-6 py-4">
+                        Used to store data on the server
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+      
+      <!-- question 3 -->
+      <h3>Question 3</h3>
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Event Loop
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <td class="px-6 py-4">
+                        Event loop is such a loop which helps a single thread programming language like java script to act like e multiple thread programming language.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+      <!-- question 4 -->
+      <h3>Question 4</h3>
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Quiz timer
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <td class="px-6 py-4">
+                        Quiz timer runs the clock during quiz. If it takes ‘true’ as parameter it reset the timer. If the timer goes beyond 60 it blinks.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+      
+      <!-- question 5 -->
+      <h3>Question 5</h3>
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Choose Quiz
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <td class="px-6 py-4">
+                        This function takes two parameters. One is question number and another is selected answer. This function creates an selected answer set and passes it to the displayAnswer() function to show them on the right side of the website.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+      Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+  </body>
+</html>
